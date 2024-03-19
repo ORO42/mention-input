@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#mentionarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 100px;
+}
+
+#mentionmenu {
+    position: absolute;
+    border: 1px solid #EAECF0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    min-width: 120px;
+    background-color: white;
+}
+
+.mention-list-item {
+    color: rgb(91, 91, 91);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.mention-list-item:hover {
+    background-color: #f3f4f6;
+    color: black;
+}
+
+.mention-chip {
+    color: rgb(251 146 60);
+    font-size: medium;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}

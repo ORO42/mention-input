@@ -25,6 +25,8 @@ hideMenu();
 ////////////////////////////////////////
 
 function dispatchMenuOpenedEvent(data = {}) {
+  // dispatched when the mention menu is visible
+  // this is a good time to target the mention menu
   const customEvent = new CustomEvent("menuOpened", {
     detail: data,
     bubbles: true,
@@ -40,6 +42,7 @@ function dispatchMenuOpenedEvent(data = {}) {
 }
 
 function dispatchMenuClosedEvent(data = {}) {
+  // dispatched when the mention menu is hidden
   const customEvent = new CustomEvent("menuClosed", {
     detail: data,
     bubbles: true,
@@ -55,6 +58,8 @@ function dispatchMenuClosedEvent(data = {}) {
 }
 
 function dispatchRenderMenuItemEvent(data = {}) {
+  // dispatched each time a menu option is added to the menu
+  // this allows targeting of menu options in order to apply custom styles, or add elements
   const customEvent = new CustomEvent("renderMenuItem", {
     detail: data,
     bubbles: true,
@@ -70,6 +75,7 @@ function dispatchRenderMenuItemEvent(data = {}) {
 }
 
 function dispatchMenuItemSelectedEvent(data = {}) {
+  // dispatched when a menu option is clicked
   const customEvent = new CustomEvent("menuItemSelected", {
     detail: data,
     bubbles: true,

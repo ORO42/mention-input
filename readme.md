@@ -32,9 +32,9 @@ Note: as of now, this is a minimal implementation.
 
 Each menu option object needs an `id` which gets assigned to the inserted element's `data-id`. This is used to target and attach event listeners to the menu option and inserted mention
 
-```json
+```js
 var menuOptions = [
-  { "title": "abc", "id": 1 },
-  { "title": "123", "id": 2 },
+  { title: "abc", id: 1 },
+  { title: "123", id: 2 },
 ];
 ```
